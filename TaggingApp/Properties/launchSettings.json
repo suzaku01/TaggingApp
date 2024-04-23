@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TaggingApp": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
