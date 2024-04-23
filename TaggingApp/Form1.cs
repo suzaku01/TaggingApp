@@ -17,6 +17,13 @@ namespace TaggingApp
             PythonEngine.Initialize();
         }
 
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            PythonEngine.Shutdown();
+            // Code
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             DialogResult dr = openFileDialog1.ShowDialog();
@@ -36,7 +43,8 @@ namespace TaggingApp
                 string[] words = kekka[2].Split(",");
                 label5.Text = words.Length.ToString() + " words";
                 SystemSounds.Beep.Play();
-                
+
+                //PythonEngine.Shutdown();
             }
         }
 
@@ -51,7 +59,7 @@ namespace TaggingApp
             label7.Text = "Successfully installed requirements";
             //textBox1.Text = ret.ToString();
 
-
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -95,7 +103,7 @@ namespace TaggingApp
                 //string[] words = kakka[2].Split(",");
                 //label5.Text = words.Length.ToString() + " words";
 
-
+               
 
             }
         }

@@ -10,6 +10,52 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="hogehoge1.py" />
+    <None Remove="hogehoge2.py" />
+    <None Remove="hogehoge3.py" />
+    <None Remove="python\python310.dll" />
+    <None Remove="python\requirements.txt" />
+    <None Remove="python\run.py" />
+    <None Remove="python\tagger\dbimutils.py" />
+    <None Remove="python\tagger\image.py" />
+    <None Remove="python\tagger\interrogator.py" />
+    <None Remove="python\tagger\interrogators.py" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="hogehoge1.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="hogehoge2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="hogehoge3.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="python\python310.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="python\requirements.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="python\run.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="python\tagger\dbimutils.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="python\tagger\image.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="python\tagger\interrogator.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="python\tagger\interrogators.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="pythonnet" Version="3.0.3" />
   </ItemGroup>
 
